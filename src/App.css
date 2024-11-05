@@ -44,7 +44,7 @@
 	max-width: 350px; /*puedo encoger pero no crecer maximo de 350 */
 	width: 100%;
 	padding: 2em 1em;
-	background-color: #ffffff40;
+
 	-webkit-backdrop-filter: brightness(1) blur(5px);
 	backdrop-filter: brightness(1) blur(5px);
 	border-radius: 1.5em;
