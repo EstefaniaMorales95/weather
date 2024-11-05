@@ -19,7 +19,7 @@
 	-webkit-backdrop-filter: brightness(1) blur(5px);
 	backdrop-filter: brightness(1) blur(5px);
 	border-radius: 1.5em;
-	box-shadow: 0 0 25px 0 #00000040;
+	box-shadow: 0 0 25px 0 #2879cf;
 	transition: box-shadow 0.25s;
 }
 .card:hover {
@@ -40,13 +40,28 @@
 	text-align: center;
 	margin-bottom: 0.25em;
 }
-
+.card__info {
+	max-width: 350px; /*puedo encoger pero no crecer maximo de 350 */
+	width: 100%;
+	padding: 2em 1em;
+	background-color: #ffffff40;
+	-webkit-backdrop-filter: brightness(1) blur(5px);
+	backdrop-filter: brightness(1) blur(5px);
+	border-radius: 1.5em;
+	box-shadow: 0 0 25px 0 #2879cf;
+	transition: box-shadow 0.25s;
+	font-family: 'Jost', sans-serif;
+}
+.card__info:hover {
+	box-shadow: 0 0 25px 0 #3089bc4a;
+}
 .card__button {
 	display: block;
 	margin: 0 auto;
-	background-color: #ffffff10;
+	background-color: #2564a8;
 	-webkit-backdrop-filter: brightness(1) blur(5px);
 	backdrop-filter: brightness(1) blur(5px);
+	color: white;
 }
 
 .search__container {
@@ -61,16 +76,15 @@
 	border-radius: 10px;
 	font-size: 16px;
 	margin-right: 10px;
-	transition: border-color 0.3s;
+	box-shadow: 0 0 25px 0 #2879cf;
+	transition: box-shadow 0.25s;
 }
 
-/* Cambia el borde al hacer focus */
 .search__container input:focus {
 	outline: none;
 	border-color: #2564a8;
 }
 
-/* Estilo del botón */
 .search__container button {
 	padding: 10px 15px;
 	background-color: #2564a8;
@@ -79,15 +93,14 @@
 	border-radius: 10px;
 	font-size: 16px;
 	cursor: pointer;
-	transition: background-color 0.3s;
 }
 
 .search-container button:hover {
-	background-color: #0bd2d2;
+	box-shadow: 0 0 25px 0 #3089bc4a;
 }
 .loading {
-	font-size: 20px; /* Tamaño de fuente */
-	color: #2564a8; /* Color verde */
-	text-align: center; /* Centrar el texto */
-	margin-top: 20px; /* Espacio arriba */
+	font-size: 20px;
+	color: #2564a8;
+	text-align: center;
+	margin-top: 20px;
 }
