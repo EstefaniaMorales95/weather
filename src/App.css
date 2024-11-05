@@ -41,15 +41,7 @@
 	margin-bottom: 0.25em;
 }
 .card__info {
-	max-width: 350px; /*puedo encoger pero no crecer maximo de 350 */
-	width: 100%;
-	padding: 2em 1em;
 	font-family: 'Jost', sans-serif;
-	border-radius: 1.5em;
-	box-shadow: 0 0 25px 0 #2879cf;
-}
-.card__info:hover {
-	box-shadow: 0 0 25px 0 #3089bc4a;
 }
 .card__button {
 	display: block;
