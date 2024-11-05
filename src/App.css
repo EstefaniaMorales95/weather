@@ -1,0 +1,93 @@
+#root {
+	/* Es un elemento padre , es un contenedor*/
+	min-height: 100vh; /**/
+	height: 100%;
+	background-image: url('/src/cielo.jpg');
+	background-repeat: no-repeat; /* para que no se repita la imagen*/
+	background-size: cover; /* para el tamaño de la imagen , cover:mete todo lo que pueda la imagen */
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	/*Es el hijo de root */
+	max-width: 350px; /*puedo encoger pero no crecer maximo de 350 */
+	width: 100%;
+	padding: 2em 1em;
+	background-color: #ffffff40;
+	-webkit-backdrop-filter: brightness(1) blur(5px);
+	backdrop-filter: brightness(1) blur(5px);
+	border-radius: 1.5em;
+	box-shadow: 0 0 25px 0 #00000040;
+	transition: box-shadow 0.25s;
+}
+.card:hover {
+	box-shadow: 0 0 25px 0 #3089bc4a;
+}
+.card__title,
+.card__subtitle {
+	text-align: center;
+}
+
+.card__dody {
+	display: flex;
+	align-items: center;
+}
+
+.card__temperature {
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 0.25em;
+}
+
+.card__button {
+	display: block;
+	margin: 0 auto;
+	background-color: #ffffff10;
+	-webkit-backdrop-filter: brightness(1) blur(5px);
+	backdrop-filter: brightness(1) blur(5px);
+}
+
+.search__container {
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+
+.search__container input {
+	padding: 10px;
+	border: 2px solid #2564a8;
+	border-radius: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+	transition: border-color 0.3s;
+}
+
+/* Cambia el borde al hacer focus */
+.search__container input:focus {
+	outline: none;
+	border-color: #2564a8;
+}
+
+/* Estilo del botón */
+.search__container button {
+	padding: 10px 15px;
+	background-color: #2564a8;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+	background-color: #0bd2d2;
+}
+.loading {
+	font-size: 20px; /* Tamaño de fuente */
+	color: #2564a8; /* Color verde */
+	text-align: center; /* Centrar el texto */
+	margin-top: 20px; /* Espacio arriba */
+}
